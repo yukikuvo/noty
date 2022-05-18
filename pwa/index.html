@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link href="fonts/SFCompactRounded-Regular.otf" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/form.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    .folder:nth-child(1) {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+  <title>Noty</title>
+</head>
+
+<body class="body">
+  <center>
+    <div class="sidemenu">
+      <div class="menu-tabs">
+        <div class="folder">
+          <p><a href="index.html">Inbox</a></p>
+        </div>
+        <div class="folder">
+          <p><a href="today.html">Home</a></p>
+        </div>
+        <div class="folder">
+          <p><a href="archive.html">Work</a></p>
+        </div>
+        <div class="folder">
+          <p><a href="deleted.html">Archive</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-bar">
+      <button class="btn-open-menu btn-gtk-left gtk" onclick="openmenu();">☰</button>
+      <button class="linkadd gtk" onclick="linkadd();">⨁</button>
+      <button class="dm btn-gtk-right gtk" onclick="darkmode();">🌗</button>
+      <button class="btn-open-settings btn-gtk-right gtk" onclick="setting();">⚙</button>
+      
+      <p class="main-text">Noty</p>
+    </div>
+
+    <div class="setting">
+      <button class="btn-gtk" onclick="closer();">X</button>
+      <p>Settings</p>
+      <button class="reset" onclick="reset();">RESET ALL!</button>
+      <p>Data Manager</p>
+      <button class="export" onclick="exportall();">Export data</button>
+      <button class="import" onclick="importall();">Import data</button>
+    </div>
+
+    <div class="content">
+      <div class="posts block-lx sidebar_container">
+        <div class="send-post">
+          <h1 class="text-lr notewr"></h1>
+          <form class="decor form-group newform">
+            <div class="circle"></div>
+            <div class="form-inner">
+              <button class="btn-gtk" onclick="closer();">X</button>
+              <h3>New note</h3>
+              <input class="form-control form-control-name" id="post-name" type="text" placeholder="Subject">
+              <input type="text" class="form-control form-control-text" id="post-body"
+                placeholder="Your text here"></input>
+              <button type="submit" id="post-add" class="btn btnadd" onclick="adding();">Save</button>
+            </div>
+          </form>
+        </div>
+        <div id="posts-field">
+          <div class="block-lm">
+            <h1 class="text-lr">Just</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/inbox.js"></script>
+    <script src="assets/js/dialog.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/data.js"></script>
+  </center>
+</body>
+
+</html>
