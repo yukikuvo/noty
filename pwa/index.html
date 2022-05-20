@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link href="fonts/SFCompactRounded-Regular.otf" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/form.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    .folder:nth-child(1) {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+  <title>Noty</title>
+</head>
+
+<body class="body">
+  <center>
+    <div class="sidemenu">
+      <button class="btn-gtk" onclick="closer();"><img class="close-img" src="icons/close.png"></button>
+      <div class="menu-tabs">
+        <div class="folder">
+          <p><a href="index.html">Inbox</a></p>
+        </div>
+        <div class="folder">
+          <p><a href="#">Home</a></p>
+        </div>
+        <div class="folder">
+          <p><a href="#">Work</a></p>
+        </div>
+        <div class="folder">
+          <p><a href="#">Archive</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-bar">
+      <button class="btn-open-menu btn-gtk-left gtk" onclick="openmenu();"><img src="icons/menu.png"></button>
+      <button class="linkadd gtk plus" onclick="linkadd();"><img src="icons/plus.png"></button>
+      <button class="dm btn-gtk-right gtk" onclick="darkmode();"><img src="icons/mode.png"></button>
+      <button class="btn-open-settings btn-gtk-right gtk" onclick="setting();"><img src="icons/setting.png"></button>
+
+      <p class="main-text">Noty</p>
+    </div>
+
+    <div class="setting">
+      <button class="btn-gtk" onclick="closer();"><img class="close-img" src="icons/close.png"></button>
+      <p>Settings</p>
+      <button class="reset" onclick="reset();">RESET ALL!</button>
+      <p>Data Manager</p>
+      <button id="export">Export data</button> <br>
+      <input class="import" type="file">
+      <p>Text Editor</p>
+      <button class="editall" onclick="editall();">Notes manager</button>
+    </div>
+
+    <div class="content">
+      <div class="posts block-lx sidebar_container">
+        <div class="send-post">
+          <form class="decor form-group newform">
+            <div class="circle"></div>
+            <div class="form-inner">
+              <button class="btn-gtk" onclick="closer();"><img class="close-img" src="icons/close.png"></button>
+              <h3>New note</h3>
+              <input class="form-control form-control-name" id="post-name" type="text" placeholder="Subject">
+              <input type="text" class="form-control form-control-text" id="post-body"
+                placeholder="Your text here"></input>
+              <button type="submit" id="post-add" class="btn btnadd" onclick="adding();">Save</button>
+            </div>
+          </form>
+        </div>
+        <div id="posts-field">
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/inbox.js"></script>
+    <script src="assets/js/dialog.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/data.js"></script>
+  </center>
+</body>
+
+</html>
