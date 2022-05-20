@@ -1,7 +1,7 @@
 © Yuki Kuvo ©
 
 > Product: Noty PWA
-> Version: 2.1
+> Version: 2.2
 > Copyright: Yes
 
 © Yuki Kuvo ©
