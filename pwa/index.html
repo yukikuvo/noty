@@ -7,6 +7,7 @@
   <link href="fonts/SFCompactRounded-Regular.otf" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css" type="text/css">
   <link rel="stylesheet" href="assets/css/form.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/delete.css" type="text/css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <style>
     .folder:nth-child(1) {
@@ -39,21 +40,22 @@
     <div class="top-bar">
       <button class="btn-open-menu btn-gtk-left gtk" onclick="openmenu();"><img src="icons/menu.png"></button>
       <button class="linkadd gtk plus" onclick="linkadd();"><img src="icons/plus.png"></button>
-      <button class="dm btn-gtk-right gtk" onclick="darkmode();"><img src="icons/mode.png"></button>
+      <button class="dm btn-gtk-right-right gtk" onclick="darkmode();"><img src="icons/mode.png"></button>
       <button class="btn-open-settings btn-gtk-right gtk" onclick="setting();"><img src="icons/setting.png"></button>
 
       <p class="main-text">Noty</p>
     </div>
 
     <div class="setting">
-      <button class="btn-gtk" onclick="closer();"><img class="close-img" src="icons/close.png"></button>
+      <button class="btn-gtk" onclick="closerset();"><img class="close-img" src="icons/close.png"></button>
       <p>Settings</p>
       <button class="reset" onclick="reset();">RESET ALL!</button>
-      <p>Data Manager</p>
+      <p>Data Mover</p>
       <button id="export">Export data</button> <br>
       <input class="import" type="file">
-      <p>Text Editor</p>
+      <p>Notes Editor</p>
       <button class="editall" onclick="editall();">Notes manager</button>
+      <button class="delete" onclick="deletenotes();">Delete notes</button>
     </div>
 
     <div class="content">
@@ -76,11 +78,19 @@
       </div>
     </div>
 
+    <div class="deletemenu">
+      <h1>Delete</h1>
+
+      <ol id="items">
+      </ol>
+    </div>
+
     <script src="assets/js/darkmode.js"></script>
     <script src="assets/js/inbox.js"></script>
     <script src="assets/js/dialog.js"></script>
     <script src="assets/js/sidebar.js"></script>
     <script src="assets/js/data.js"></script>
+    <script src="assets/js/delete.js"></script>
   </center>
 </body>
 

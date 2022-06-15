@@ -14,6 +14,7 @@ document.getElementById('post-add').onclick = function () {
   posts.push(post);
   savePosts();
   showPosts();
+  finish();
 }
 
 function savePosts() {
@@ -41,4 +42,8 @@ function showPosts() {
     out = `<div class="block-lm">` + out;
   });
   postsField.innerHTML = out;
+}
+
+function finish() {
+  document.location.reload(true);
 }
