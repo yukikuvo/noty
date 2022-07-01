@@ -23,11 +23,7 @@ document.getElementsByClassName('reset')[0].onclick = function reset() {
 document.getElementsByClassName('btn-gtk')[0].onclick = function closer() {
   document.location.reload(true);
 }
-
-document.getElementsByClassName('btn-open-menu')[0].onclick = function openmenu() {
-  document.getElementsByClassName('sidemenu')[0].style = "display: block";
-}
-
+  
 function closerset () {
   document.location.reload(true);
 }

@@ -6,10 +6,6 @@ function enabler() {
   document.getElementsByClassName('main-text')[0].style = "color: white";
   document.getElementsByClassName('main-text')[0].style = "color: white";
   document.getElementsByClassName('linkadd')[0].style = "color: white";
-  document.getElementsByClassName('linkadd')[0].style = "background: gray";
-  document.getElementsByClassName('btn-gtk-left')[0].style = "background: gray";
-  document.getElementsByClassName('btn-gtk-right')[0].style = "background: gray";
-  document.getElementsByClassName('btn-gtk-right-right')[0].style = "background: gray";
 
   let ilems = document.querySelectorAll('.notetext');
   for (let ilem of ilems) {
