@@ -1,11 +1,9 @@
 function deletenotes() {
-    let notesdata = `${localStorage.getItem('posts')}`;
-    return notesdata.replace(/\//, "");
-    const circles = notesdata.length;
-
+    var notesdata = JSON.parse(localStorage.getItem('posts'));
+    countcircles(notesdata.length, notesdata);
 }
     
-
+function countcircles (circles, gooddata) {
     var step;
     for (step = 0; step < circles+1; step++) {
         let elemdata = gooddata[step]['name'];
@@ -15,3 +13,4 @@ function deletenotes() {
         let $items = document.querySelector('#items');
         $items.appendChild($newLi);
     }
+}

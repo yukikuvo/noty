@@ -1,7 +1,7 @@
 body {
   font-family: "SFCompactRounded Regular";
   font-weight: bolder;
-  background-color: #faebc7;
+  background-color: white;
 }
 
 header {
@@ -36,7 +36,7 @@ li {
 }
 
 .notetext {
-  background: #EFBE74;
+  background: #f1d3a5;
   border-radius: 6px;
   height: 150px;
 }
@@ -58,7 +58,6 @@ a {
 }
 
 .text-lr {
-  color: white;
   font-size: 30px;
   height: 70px;
   overflow: scroll;
@@ -95,10 +94,10 @@ a {
 .block-lm {
   float: right;
   margin-bottom: 3%;
-  background-color: #2E2937;
+  background-color: #b4bfca;
   padding: 1%;
   height: auto;
-  border-radius: 16px;
+  border-radius: 12px;
   float: left;
   width: 23%;
   margin-right: 1%;
@@ -115,9 +114,8 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
-  background: #808080e3;
+  background: #0D6EFD;
   margin-left: -1.2%;
-  border: solid black 0.01px;
   height: 50px;
 }
 
@@ -125,20 +123,31 @@ a {
   text-align: center;
   font-size: 25px;
   margin-top: 1%;
+  color: white;
 }
 
 .setting {
   width: 70%;
   height: auto;
-  background: gray;
+  background: white;
   position: fixed;
   padding: 1%;
   box-shadow: 100px 100px 100px 1000px rgba(0, 0, 0, 0.9);
   display: none;
   margin-left: 15%;
   margin-top: 5%;
-  border-radius: 10px;
-  border: solid black 1px;
+  border-radius: 8px;
+  border: 0;
+  padding: 1%;
+}
+
+.reset, #export, .import, .delete, .editall {
+  background: #0D6EFD;
+  font-size: 1em;
+  padding: 2%;
+  width: 30%;
+  border-radius: 8px;
+  color: white;
 }
 
 .setting p {
@@ -158,16 +167,7 @@ img {
   }
 
   .block-lm {
-    float: right;
-    margin-bottom: 3%;
-    background-color: #2E2937;
-    padding: 1%;
-    height: auto;
-    border-radius: 16px;
-    float: left;
-    width: 47%;
-    margin-right: 1%;
-    margin-left: 1%;
+    width: 48%;
   }
 
 

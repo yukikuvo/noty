@@ -79,10 +79,10 @@
   padding: 30px;
   position: fixed;
   box-shadow: 100px 100px 100px 1000px rgba(0, 0, 0, 0.9);
-  background: #cab286;
+  background: white;
   border-radius: 8px;
   margin-top: 10%;
-  border: solid black 1px;
+  border: 0;
 }
 
 .form-inner input,
@@ -91,11 +91,20 @@
   width: 100%;
   padding: 0 20px;
   margin-bottom: 10px;
-  background: #E9EFF6;
+  background: lightgray;
   line-height: 40px;
   border-width: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   font-family: 'Roboto', sans-serif;
+}
+
+#post-add {
+  background: #0D6EFD;
+  font-size: 1em;
+  padding: 2%;
+  width: 30%;
+  border-radius: 8px;
+  color: white;
 }
 
 .form-inner textarea {
